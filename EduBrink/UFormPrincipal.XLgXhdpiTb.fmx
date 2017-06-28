@@ -1,0 +1,67 @@
+inherited FormPrincipal_XLgXhdpiTb: TFormPrincipal_XLgXhdpiTb
+  ClientHeight = 1255
+  ClientWidth = 800
+  DesignerMasterStyle = 0
+  inherited Label1: TLabel
+    Size.Width = 780.000000000000000000
+    Size.Height = 61.000000000000000000
+    TextSettings.Font.Size = 40.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited GridPanelLayout1: TGridPanelLayout
+    Size.Width = 800.000000000000000000
+    Size.Height = 1004.000000000000000000
+    inherited RctPersonagem: TRectangle
+      Size.Width = 380.000000000000000000
+      Size.Height = 482.000000000000000000
+      inherited BtnPersonagem: TCornerButton
+        StyledSettings = [Family, FontColor]
+        Size.Width = 380.000000000000000000
+        Size.Height = 482.000000000000000000
+        TextSettings.Font.Family = 'Roboto'
+        TextSettings.Font.Size = 50.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited RctCores: TRectangle
+      Size.Width = 380.000000000000000000
+      Size.Height = 482.000000000000000000
+      inherited BtnCores: TCornerButton
+        StyledSettings = [Family, FontColor]
+        Size.Width = 380.000000000000000000
+        Size.Height = 482.000000000000000000
+        TextSettings.Font.Family = 'Roboto'
+        TextSettings.Font.Size = 50.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited RctBrinquedo: TRectangle
+      Size.Width = 380.000000000000000000
+      Size.Height = 482.000000000000000000
+      inherited BtnBrinquedo: TCornerButton
+        StyledSettings = [Family, FontColor]
+        Size.Width = 380.000000000000000000
+        Size.Height = 482.000000000000000000
+        TextSettings.Font.Family = 'Roboto'
+        TextSettings.Font.Size = 50.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited RctMateriais: TRectangle
+      Size.Width = 380.000000000000000000
+      Size.Height = 482.000000000000000000
+      inherited BtnMateriasEscolares: TCornerButton
+        StyledSettings = [Family, FontColor]
+        Size.Width = 380.000000000000000000
+        Size.Height = 482.000000000000000000
+        TextSettings.Font.Family = 'Roboto'
+        TextSettings.Font.Size = 50.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+  inherited StyleBook1: TStyleBook
+    Left = 8
+    Top = 8
+  end
+end

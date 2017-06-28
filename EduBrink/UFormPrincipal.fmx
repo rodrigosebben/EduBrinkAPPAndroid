@@ -1,0 +1,261 @@
+object FormPrincipal: TFormPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 557
+  ClientWidth = 300
+  Fill.Color = claDarkcyan
+  Fill.Kind = Solid
+  Position = ScreenCenter
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnKeyUp = FormKeyUp
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Align = Top
+    StyledSettings = []
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 100.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 100.000000000000000000
+    Size.Width = 280.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Roboto'
+    TextSettings.Font.Size = 22.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claWhite
+    TextSettings.HorzAlign = Center
+    Text = 'SELECIONE UM JOGO'
+  end
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Client
+    Margins.Bottom = 80.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 326.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ColumnCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = RctPersonagem
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = RctCores
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = RctBrinquedo
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = RctMateriais
+        Row = 1
+      end>
+    RowCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        SizeStyle = Auto
+      end
+      item
+        SizeStyle = Auto
+      end>
+    object RctPersonagem: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 143.000000000000000000
+      Size.PlatformDefault = False
+      object BtnPersonagem: TCornerButton
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 130.000000000000000000
+        Size.Height = 143.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'DESCUBRA O PERSONAGEM'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.WordWrap = True
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = BtnPersonagemClick
+      end
+      object ShadowEffect1: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+    end
+    object RctCores: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 143.000000000000000000
+      Size.PlatformDefault = False
+      object ShadowEffect2: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+      object BtnCores: TCornerButton
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 130.000000000000000000
+        Size.Height = 143.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'CornerButton1Style1'
+        TabOrder = 0
+        Text = 'JOGO DAS CORES'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.WordWrap = True
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = BtnCoresClick
+      end
+    end
+    object RctBrinquedo: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 143.000000000000000000
+      Size.PlatformDefault = False
+      object ShadowEffect3: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+      object BtnBrinquedo: TCornerButton
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 130.000000000000000000
+        Size.Height = 143.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'CornerButton1Style1'
+        TabOrder = 0
+        Text = 'DESCUBRA O BRINQUEDO'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.WordWrap = True
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = BtnBrinquedoClick
+      end
+    end
+    object RctMateriais: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 143.000000000000000000
+      Size.PlatformDefault = False
+      object ShadowEffect4: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+      object BtnMateriasEscolares: TCornerButton
+        Align = Client
+        StyledSettings = [Family, Style, FontColor]
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 130.000000000000000000
+        Size.Height = 143.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'CornerButton1Style1'
+        TabOrder = 0
+        Text = 'DESCUBRA OS MATERIAIS ESCOLARES'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.WordWrap = True
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+        OnClick = BtnMateriasEscolaresClick
+      end
+    end
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E35010611436F726E6572427574746F6E7374796C
+          6503EE03005450463007544C61796F757400095374796C654E616D650611436F
+          726E6572427574746F6E7374796C6505416C69676E070643656E7465720A5369
+          7A652E576964746805000000000000008206400B53697A652E48656967687405
+          000000000000808106401453697A652E506C6174666F726D44656661756C7408
+          085461624F726465720200000A5452656374616E676C6500095374796C654E61
+          6D65060A6261636B67726F756E6405416C69676E0708436F6E74656E74730A46
+          696C6C2E436F6C6F720708636C615768697465064C6F636B6564090748697454
+          657374080A53697A652E576964746805000000000000008206400B53697A652E
+          48656967687405000000000000808106401453697A652E506C6174666F726D44
+          656661756C74080C5374726F6B652E436F6C6F72070978464644344434443400
+          1054496E6E6572476C6F774566666563740008536F66746E6573730500000000
+          00CDCCCCFD3F09476C6F77436F6C6F720709784646344634383438074F706163
+          6974790500000000006666E6FE3F0754726967676572060E4973507265737365
+          643D7472756507456E61626C6564080000000654476C79706800095374796C65
+          4E616D65060A676C7970687374796C650C4D617267696E732E4C656674050000
+          00000000008000400B4D617267696E732E546F7005000000000000008001400D
+          4D617267696E732E526967687405000000000000008000400E4D617267696E73
+          2E426F74746F6D050000000000000080004005416C69676E07044C6566740A53
+          697A652E576964746805000000000000008003400B53697A652E486569676874
+          05000000000000008003401453697A652E506C6174666F726D44656661756C74
+          08000005545465787400095374796C654E616D6506047465787405416C69676E
+          0706436C69656E74064C6F636B6564090748697454657374080C4D617267696E
+          732E4C6566740500000000000000A001400B4D617267696E732E546F70050000
+          00000000008000400D4D617267696E732E52696768740500000000000000A001
+          400E4D617267696E732E426F74746F6D05000000000000008000400A53697A65
+          2E57696474680500000000000000F005400B53697A652E486569676874050000
+          0000000000FB05401453697A652E506C6174666F726D44656661756C74080454
+          657874060454657874185465787453657474696E67732E466F6E742E46616D69
+          6C790606526F626F746F165465787453657474696E67732E466F6E742E53697A
+          6505000000000000008003401A5465787453657474696E67732E466F6E742E53
+          74796C654578740A0D0000000007000000000000000400000015546578745365
+          7474696E67732E576F72645772617008000000}
+      end>
+  end
+end

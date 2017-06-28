@@ -1,0 +1,59 @@
+inherited FormPrincipal_LgXhdpiPh: TFormPrincipal_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited Label1: TLabel
+    Size.Width = 430.000000000000000000
+    Size.Height = 49.000000000000000000
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+  inherited GridPanelLayout1: TGridPanelLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 456.000000000000000000
+    inherited RctPersonagem: TRectangle
+      Size.Width = 205.000000000000000000
+      Size.Height = 208.000000000000000000
+      inherited BtnPersonagem: TCornerButton
+        StyledSettings = [Family, FontColor]
+        Size.Width = 205.000000000000000000
+        Size.Height = 208.000000000000000000
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited RctCores: TRectangle
+      Size.Width = 205.000000000000000000
+      Size.Height = 208.000000000000000000
+      inherited BtnCores: TCornerButton
+        StyledSettings = [Family, FontColor]
+        Size.Width = 205.000000000000000000
+        Size.Height = 208.000000000000000000
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited RctBrinquedo: TRectangle
+      Size.Width = 205.000000000000000000
+      Size.Height = 208.000000000000000000
+      inherited BtnBrinquedo: TCornerButton
+        StyledSettings = [Family, FontColor]
+        Size.Width = 205.000000000000000000
+        Size.Height = 208.000000000000000000
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited RctMateriais: TRectangle
+      Size.Width = 205.000000000000000000
+      Size.Height = 208.000000000000000000
+      inherited BtnMateriasEscolares: TCornerButton
+        StyledSettings = [Family, FontColor]
+        Size.Width = 205.000000000000000000
+        Size.Height = 208.000000000000000000
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+end

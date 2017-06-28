@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A93D3EF6-857B-429C-A089-63A5581A9184}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="EduBrink.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="C:\Users\rodri\OneDrive\Documentos\Embarcadero\Studio\Projects\EdubrinkAux.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="EduBrink">
+        <MSBuild Projects="EduBrink.dproj"/>
+    </Target>
+    <Target Name="EduBrink:Clean">
+        <MSBuild Projects="EduBrink.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EduBrink:Make">
+        <MSBuild Projects="EduBrink.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EdubrinkAux">
+        <MSBuild Projects="C:\Users\rodri\OneDrive\Documentos\Embarcadero\Studio\Projects\EdubrinkAux.dproj"/>
+    </Target>
+    <Target Name="EdubrinkAux:Clean">
+        <MSBuild Projects="C:\Users\rodri\OneDrive\Documentos\Embarcadero\Studio\Projects\EdubrinkAux.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EdubrinkAux:Make">
+        <MSBuild Projects="C:\Users\rodri\OneDrive\Documentos\Embarcadero\Studio\Projects\EdubrinkAux.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="EduBrink;EdubrinkAux"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="EduBrink:Clean;EdubrinkAux:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="EduBrink:Make;EdubrinkAux:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

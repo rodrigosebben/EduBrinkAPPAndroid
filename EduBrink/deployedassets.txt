@@ -1,0 +1,4 @@
+.\assets\Internal\Som_Erro.3gp
+.\assets\Internal\AndroidManifest.xml
+.\assets\Internal\Som_Splash.3gp
+.\assets\Internal\Som_Acerto.3gp
